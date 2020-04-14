@@ -11,6 +11,29 @@ nav {
     background-color: #212121;
 }
 
+.label {
+    display: block;
+    margin: 0 auto;
+    width: 112px;
+    height: 24px;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.title {
+    margin-bottom: 0;
+    font-size: 38px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 38px;
+    text-align: center;
+}
+
 .menu {
     position: fixed;
     display: flex;
@@ -41,7 +64,7 @@ nav {
 
 .subheader .subheader_logo {
     display: block;
-    max-width: 100%; /* размер любой вставленной картинки не больше колонки */
+    max-width: 100%;
     margin-top: 16px;
 }
 
@@ -111,6 +134,7 @@ nav {
     line-height: 36px;
     margin: 0;
     margin-top: 22px;
+    text-align: center;
 }
 
 .promo .promo_descr {
@@ -143,41 +167,13 @@ nav {
     padding: 71px 0 60px 0;
 }
 
-.advantages .advantages_btn {
-    display: block;
-    margin: 0 auto;
-    width: 112px;
-    height: 24px;
-    background-color: #000000;
-    color: #ffffff;
-    font-size: 11px;
-    font-weight: 400;
-    text-transform: uppercase;
-}
-
-.advantages_header {
-    font-size: 38px;
-    font-weight: 700;
-    line-height: 48px;
-    text-transform: uppercase;
-    text-align: center;
-    margin-top: 44px;
-}
-
-.row {
-    margin-top: 52px;
-}
-
 .advantages .advantages_reason {
     margin-top: 35px;
     display: inline-flex;
     justify-content: center;
-    align-items: center;
-
 }
 
 .advantages .advantages_reason .advantages_reason_img {
-    /* position: absolute; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -185,6 +181,7 @@ nav {
     height: 113px;
     background-color: #1eacc7;
     border-radius: 100%;
+    margin: auto auto;
     margin-right: 26px;
 }
 
