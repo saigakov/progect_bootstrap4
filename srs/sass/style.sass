@@ -1,20 +1,34 @@
 *
 	font-family: 'Roboto', sans-serif
 
+$almost-black: #070716
+$tealish: #1fbad6
+$brown-grey: #999999
+$almost-black-two: #080816
+$white: #ffffff
+$black: #222222
+$black-two: #000000
+$topaz: #1ca8c3
+$grapefruit: #ff5656
+$tealish-two: #1eacc7
+$black-three: #202020
+$black-four: #212121
+$black-opacity: rgba(0, 0, 0, 0.6)
+
 header
 	position: relative
 
 nav
 	height: 50px
-	background-color: #212121
+	background-color: $black-four
 
 .label
 	margin: 0 auto
 	width: 112px
 	height: 24px
 	padding: 5px 12px
-	background-color: #000000
-	color: #ffffff
+	background-color: $black-two
+	color: $white
 	font-size: 11px
 	font-weight: 300
 	text-transform: uppercase
@@ -31,7 +45,7 @@ nav
 
 .subtitle
 	margin-top: 19px
-	color: #222222
+	color: $black
 	font-size: 17px
 	font-weight: 400
 	text-align: center
@@ -45,7 +59,7 @@ nav
 	list-style-type: none
 
 	.menu_link
-		color: #ffffff
+		color: $white
 		font-size: 15px
 		font-weight: 300
 
@@ -57,7 +71,7 @@ nav
 	position: absolute
 	width: 100%
 	height: 84px
-	background-color: rgba(0, 0, 0, 0.6)
+	background-color: $black-opacity
 
 	.subheader_logo
 		display: block
@@ -67,13 +81,13 @@ nav
 	.subheader_official
 		margin-top: 6px
 		opacity: 0.5
-		color: #ffffff
+		color: $white
 		font-size: 13px
 		font-weight: 400
 
 	.subheader_call
 		margin-top: 19px
-		color: #ffffff
+		color: $white
 		font-size: 12px
 		font-weight: 300
 		text-align: right
@@ -81,7 +95,7 @@ nav
 	.subheader_phone
 		margin-top: 8px
 		display: block
-		color: #ffffff
+		color: $white
 		font-size: 22px
 		font-weight: 400
 		text-transform: uppercase
@@ -97,7 +111,7 @@ nav
 		border-radius: 4px
 		background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%)
 		text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21)
-		color: #ffffff
+		color: $white
 		font-size: 14px
 		font-weight: 400
 		text-transform: uppercase
@@ -108,7 +122,7 @@ nav
 	padding: 150px 0 135px 0
 
 	.promo_header
-		color: #ffffff
+		color: $white
 		font-weight: 700
 		text-transform: uppercase
 		font-size: 60px
@@ -117,7 +131,7 @@ nav
 		text-align: center
 
 	.promo_subheader
-		color: #ffffff
+		color: $white
 		font-weight: 700
 		text-transform: uppercase
 		font-size: 36px
@@ -127,7 +141,7 @@ nav
 		text-align: center
 
 	.promo_descr
-		color: #ffffff
+		color: $white
 		font-size: 18px
 		font-weight: 400
 		line-height: 24px
@@ -144,7 +158,7 @@ nav
 		border-radius: 4px
 		background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%)
 		text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21)
-		color: #ffffff
+		color: $white
 		font-size: 18px
 		font-weight: 400
 		text-transform: uppercase
@@ -152,33 +166,28 @@ nav
 .advantages
 	min-height: 900px
 	padding: 71px 0 60px 0
-
-
-.advantages .advantages_reason
-	margin-top: 35px
-	display: inline-flex
-	justify-content: center
-
-.advantages_reason_img
-	display: flex
-	justify-content: center
-	align-items: center
-	width: 113px
-	height: 113px
-	background-color: #1eacc7
-	border-radius: 100%
-	margin: auto auto
-	margin-right: 26px
-
-.reason_text
-	width: 341px
-	text-align: justify
-	font-weight: 300
-
-.reason_header
-	color: #1eacc7
-	font-size: 17px
-	font-weight: 400
+	.advantages_reason
+		margin-top: 35px
+		display: inline-flex
+		justify-content: center
+		.advantages_reason_img
+			display: flex
+			justify-content: center
+			align-items: center
+			width: 113px
+			height: 113px
+			background-color: $tealish-two
+			border-radius: 100%
+			margin: auto auto
+			margin-right: 26px
+	.reason_text
+		width: 341px
+		text-align: justify
+		font-weight: 300
+	.reason_header
+		color: $tealish-two
+		font-size: 17px
+		font-weight: 400
 
 .mobile
 	min-height: 864px
@@ -206,7 +215,7 @@ nav
 		&_6
 			background: url('../img/cards/mobile_application6.png') center (center/cover) no-repeat
 		&_subtitle
-			color: #ffffff
+			color: $white
 			font-size: 24px
 			font-weight: 400
 			text-transform: uppercase
@@ -221,7 +230,7 @@ nav
 			transform: translateX(-50%)
 			width: 26px
 			height: 26px
-			background-color: #000000
+			background-color: $black-two
 			margin: 0 auto
 			border-radius: 100%
 			cursor: pointer
