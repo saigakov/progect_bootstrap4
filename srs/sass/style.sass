@@ -23,6 +23,7 @@ nav
 	background-color: $black-four
 
 .label
+	position: relative
 	margin: 0 auto
 	width: 112px
 	height: 24px
@@ -33,22 +34,34 @@ nav
 	font-weight: 300
 	text-transform: uppercase
 	text-align: center
+	z-index: 2
+	&_white
+		background-color: $white
+		color: $black-two
 
 .title
+	position: relative
 	margin-bottom: 0
+	margin-top: 38px
+	color: $black
 	font-size: 38px
 	font-weight: 700
 	text-transform: uppercase
 	text-align: center
-	margin-top: 38px
-	text-align: center
+	z-index: 2
+	&_white
+		color: $white
 
 .subtitle
+	position: relative
 	margin-top: 19px
 	color: $black
 	font-size: 17px
 	font-weight: 400
 	text-align: center
+	z-index: 2
+	&_white
+		color: $white
 
 .menu
 	position: fixed
@@ -236,40 +249,24 @@ nav
 			cursor: pointer
 
 .car
-	height: 896px
-	padding: 60px 0 138px 0
+	position: relative
+	min-height: 895px
+	padding: 57px 0 138px 0
 	background-color: $almost-black
+	background: url('../img/bg/grid_bg.png') center (center/cover) no-repeat
 	&_bg
-		height: 397px
-		background: $tealish-two
-		margin-top: -250px
-	.label_white
-		margin: 0 auto
-		width: 112px
-  		height: 24px
-		padding: 5px 12px
-		background-color: $white
-		font-size: 11px
-  		font-weight: 100
-		text-align: center
-		text-transform: uppercase
-  		color: $almost-black
-	.title_white
-		margin-bottom: 0
-		font-size: 38px
-		font-weight: 700
-		text-transform: uppercase
-		text-align: center
-		margin-top: 44px
-		text-align: center
-		color: $white
-	.subtitle
-		color: $white
+		position: absolute
+		top: 0
+		left: 0
+		height: 499px
+		width: 100%
+		background-color: $almost-black
+		z-index: 2
 	.img_car
-		display: flex
-		justify-content: center
-		align-items: center
-		margin-top: 50px
+		position: relative
+		display: block
+		margin: 56px auto 0 auto
+		z-index: 2
 	.text_item
 		margin: 0 auto
 		font-size: 17px
