@@ -356,74 +356,77 @@ nav
 		text-transform: uppercase
 		text-align: center
 
+footer 
+	padding: 14px 23px 39px 23px
+	a 
+		&:hover 
+			text-decoration: none
 .footer
-	position: relative
-	min-height: 156px
-	padding: 51px 0 39px 0
-	&_socialnetwork 
-		position: absolute
-		list-style-type: none
+	&_divider
+		width: 299px
+		height: 4px
+		background-color: #1fbad6
+		margin: 0 auto
+	&_wrapper
+		display: flex 
+		justify-content: space-between
+		align-items: flex-start
+		padding-top: 32px
+	&_wrapper > div 
+		width: 33%
+		&:nth-child(3)
+			display: flex 
+			justify-content: flex-end
+	&_social
+		width: 160px
 		display: flex
-		justify-content: flex-start
-		padding-left: 23px
-		&_link
-			display: flex
+		justify-content: space-between
+		&_item 
+			display: flex 
 			justify-content: center
 			align-items: center
-			margin: 0 4px 0 4px
+			margin: 0 4px 
 			width: 32px
 			height: 32px
-			background-color: black
+			background-color: #070716
 			border-radius: 100%
-			i
+			span 
 				color: #fff
-
-	&_menu
-		display: flex
-		justify-content: center
-		&_link
-			margin: 0 23px 0 23px
-			color: $almost-black
-			font-size: 15px
-			font-weight: 300
-			text-transform: uppercase
-		&:before
-			content: ''
-			display: block
-			position: absolute
-			width: 299px
-			height: 4px
-			background-color: #1fbad6
-			top: 14px
-
-	&_submenu
-		display: flex
-		justify-content: center
-		&_link
-			margin: 0 10px 0 10px
-			color: $brown-grey
+	&_links
+		width: 390px
+		margin: 0 auto
+		&_main 
+			display: flex 
+			justify-content: space-between
+			padding: 0 10px
+			a 
+				color: #070716
+				font-size: 15px
+				font-weight: 300
+				text-transform: uppercase
+		&_sub 
+			display: flex 
+			justify-content: space-between
+			margin-top: 10px
+			a 
+				color: #999999
+				font-size: 11px
+				font-weight: 300
+				text-transform: uppercase
+		&_lang 
+			display: block 
+			margin: 0 auto
+			color: #1fbad6
 			font-size: 11px
-			font-weight: 300
+			font-weight: 400
+			margin-top: 19px
 			text-transform: uppercase
-	&_download
-		position: absolute
-		right: 23px
-		top: 52px
-		&_block
-			list-style-type: none
-			display: flex
-			justify-content: flex-end
-			align-items: center
-		&_link
-			margin: 0 3px 0 3px
-		&_img
+			text-align: center
+	&_mobile
+		width: 296px
+		display: flex
+		justify-content: space-between
+		align-items: center
+		img
 			width: 94px
-			height: 27px
-			margin-right: 7px
-	&_text
-		color: $tealish
-		font-size: 11px
-		font-weight: 400
-		text-transform: uppercase
-		text-align: center
-		margin-top: 19px
+			height: 26px
