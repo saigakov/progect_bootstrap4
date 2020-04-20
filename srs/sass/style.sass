@@ -367,9 +367,18 @@ nav
 		justify-content: flex-start
 		padding-left: 23px
 		&_link
+			display: flex
+			justify-content: center
+			align-items: center
 			margin: 0 4px 0 4px
+			width: 32px
+			height: 32px
+			background-color: black
+			border-radius: 100%
+			i
+				color: #fff
+
 	&_menu
-		list-style-type: none
 		display: flex
 		justify-content: center
 		&_link
@@ -378,9 +387,16 @@ nav
 			font-size: 15px
 			font-weight: 300
 			text-transform: uppercase
+		&:before
+			content: ''
+			display: block
+			position: absolute
+			width: 299px
+			height: 4px
+			background-color: #1fbad6
+			top: 14px
 
 	&_submenu
-		list-style-type: none
 		display: flex
 		justify-content: center
 		&_link
