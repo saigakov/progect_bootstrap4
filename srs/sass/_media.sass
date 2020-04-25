@@ -10,9 +10,94 @@
 	.advantages
 		&_reason_text
 			width: 300px
+	.mobile
+		&_item
+			width: 300px
+	.footer
+		&_social
+			a
+				width: 28px
+				height: 28px
+		&_mobile
+			img
+				width: 70px
+				height: 20px
 @media (max-width: 991px)
 	.menu
 		&_item
 			padding-right: 8px
 		&_link
 			font-size: 10px
+	.subheader
+		&_logo
+			img
+				width: 100%
+		&_official
+			font-size: 11px
+		&_phone
+			font-size: 18px
+		&_btn
+			margin-top: 21px
+			height: 40px
+			width: 100%
+	.promo
+		&_header
+			font-size: 40px
+		&_subheader
+			font-size: 30px
+	.advantages
+		&_reason
+			flex-direction: column
+			align-items: center
+			justify-content: flex-start
+			&_img
+				margin: 0
+			&_text
+				width: 300px
+				margin-top: 20px
+	.mobile
+		&_item
+			width: 215px
+			&_subtitle
+				font-size: 18px
+	.car
+		img
+			width: 600px
+	.require
+		&_title
+			font-size: 20px
+		&_list
+			li
+				font-size: 15px
+	.footer
+		&_divider
+			width: 255px
+		&_wrapper > div 
+			&:nth-child(2)
+				width: 50%
+		&_mobile
+			flex-direction: column
+
+@media (max-width: 767px)
+	.menu
+		position: fixed
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		top: 0
+		left: -100%
+		width: 50%
+		height: 125vh
+		padding: 20px 15px
+		background-color: rgba(0,0,0, .8)
+		transition: 0.6 all
+		&_active
+			left: 0
+		&_item
+			padding-right: 0
+			border: none
+			margin: 10px 0
+		&_link
+			font-size: 20px
+		
+			

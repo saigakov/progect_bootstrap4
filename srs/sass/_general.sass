@@ -183,10 +183,10 @@ nav
 			width: 341px
 			text-align: justify
 			font-weight: 300
-	&_header
-		color: $tealish-two
-		font-size: 17px
-		font-weight: 400
+			span
+				color: $tealish-two
+				font-size: 17px
+				font-weight: 400
 
 .mobile
 	min-height: 864px
@@ -373,7 +373,7 @@ footer
 			span 
 				color: #fff
 	&_links
-		width: 390px
+		max-width: 390px
 		margin: 0 auto
 		&_main 
 			display: flex 
@@ -403,10 +403,12 @@ footer
 			text-transform: uppercase
 			text-align: center
 	&_mobile
-		width: 296px
+		max-width: 296px
 		display: flex
 		justify-content: space-between
 		align-items: center
 		img
-			width: 94px
+			max-width: 94px
 			height: 26px
+			border-radius: 3px
+			margin-right: 7px
