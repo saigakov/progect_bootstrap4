@@ -76,7 +76,11 @@
 			&:nth-child(2)
 				width: 50%
 		&_mobile
-			flex-direction: column
+			margin-left: 10px
+			a
+				margin-right: 4px
+				&:nth-child(3)
+					margin-right: 0px
 
 @media (max-width: 767px)
 	.menu
@@ -87,7 +91,7 @@
 		top: 0
 		left: -100%
 		width: 50%
-		height: 125vh
+		min-height: 102vh
 		padding: 20px 15px
 		background-color: rgba(0,0,0, .8)
 		transition: 0.8s all
@@ -95,10 +99,13 @@
 		&_active
 			left: 0
 		&_item
+			width: 100%
+			text-align: center
 			padding-right: 0
 			border: none
 			margin: 10px 0
 		&_link
+			display: block
 			font-size: 20px
 	.hamburger
 		display: block
@@ -150,24 +157,39 @@
 	.car
 		img
 			width: 500px
+	footer
+		padding: 14px 0 39px 0
 	.footer
 		&_divider
 			width: 235px
-		&_wrapper > div 
+		&_wrapper > div
 			&:nth-child(2)
-				width: 85%
+				width: 50%
+				
 		&_social
 			width: 130px
 			a
 				width: 25px
 				height: 25px
 		&_links
-			
+			&_main
+				width: 100%
+				a
+					font-size: 12px
 			&_lang
 				font-size: 14px
 			&_sub
 				a
 					font-size: 10px
+				flex-wrap: wrap
+		&_mobile
+			a
+				margin-right: 4px
+				&:nth-child(3)
+					margin-right: 2px
+			img
+				width: 50px
+				height: 15px
 @media (max-width: 575px)
 	nav
 		height: 30px
@@ -186,10 +208,12 @@
 			text-transform: uppercase
 			margin-top: 11px
 		&_btn
-			width: 110px
+			max-width: 120px
 			height: 22px
 			font-size: 10px
 			margin-top: 6px
+			&:hover
+				background-image: linear-gradient(to top, $tealish-two 0%, #4ce2ff 100%)
 	.promo
 		min-height: 400px
 		padding: 93px 0 35px 0
@@ -208,8 +232,17 @@
 			width: 210px
 			height: 50px
 			margin-top: 72px
+			&:hover
+				background-image: linear-gradient(to top, $tealish-two 0%, #4ce2ff 100%)
+			
 	.menu
 		width: 85%
+		&_item
+			width: 100%
+			text-align: center
+			padding: 5px 0
+		&_link
+			display: block
 	.advantages
 		padding: 22px 0 36px 0
 		&_reason
@@ -292,6 +325,7 @@
 					order: 2
 					min-width: 155px
 				&:nth-child(2)
+					width: 100%
 					order: 1
 				&:nth-child(3)
 					order: 3
